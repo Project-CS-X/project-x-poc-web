@@ -1,0 +1,4 @@
+{
+    "browsers": "chrome",
+    "src": ["./src/tests/e2e/**/*.e2e.js"]
+}

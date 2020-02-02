@@ -8,13 +8,17 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.3.1",
+    "serve": "^11.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve:build": "serve -s build",
+    "e2e": "echo 'Creating an optimized production build...' && yarn build > /dev/null && testcafe --app 'yarn serve:build'",
+    "test-all": "yarn test --watchAll=false && yarn e2e"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "testcafe": "^1.8.1"
   }
 }

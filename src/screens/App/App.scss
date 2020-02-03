@@ -1,92 +1,25 @@
 @import '../../assets/css/global.scss';
-$background-color: #cfedf5;
-$text-color: #58677d;
 
-
-.App-logo {
-  pointer-events: none;
-  height: 40vmin;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color-dark;
+  .App-header {
+    width: 100%;
+    position:absolute;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $text-color-dark;
+    p {
+      font-weight: 700;
+    }
+    
+    .App-link {
+      color: #61dafb;
+    }
   }
-}
-
-.App-icon {
-  pointer-events: none;
-  position: absolute;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-icon {
-    animation: float infinite 5s linear;
-  }
-}
-
-.App-header {
-  background-color: $background-color;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: $text-color;
-
-  p {
-    font-weight: 700;
-  }
-}
-
-.App-link {
-  color: #61dafb;
-}
-.App-icon:nth-child(1) {
-  color:red;
-  height: 5vmin;
-  left: 20%;
-  top: 15%;
-  animation-delay: 0;
-}
-.App-icon:nth-child(2) {
-  color:red;
-  height: 10vmin;
-  left: 75%;
-  top: 80%;
-  animation-delay: 1s;
-}
-.App-icon:nth-child(3) {
-  color:red;
-  height: 15vmin;
-  left: 85%;
-  top: 10%;
-  animation-delay: 2s;
-}
-.App-icon:nth-child(4) {
-  color:red;
-  height: 20vmin;
-  left: 10%;
-  top: 60%;
-  animation-delay: 3s;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
+}  

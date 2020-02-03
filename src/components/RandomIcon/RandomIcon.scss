@@ -1,0 +1,31 @@
+.appIcon {
+    pointer-events: none;
+    position: absolute;
+}
+  
+@keyframes floaty {
+	0% {
+		transform: translatey(0);
+    }
+    25% {
+		transform: translatey(4px);
+	}
+	50% {
+		transform: translatey(0);
+    }
+    75% {
+		transform: translatey(-4px);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+
+@keyframes spinny {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

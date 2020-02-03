@@ -1,17 +1,15 @@
 import React from 'react';
-import logo from '../../assets/images/logo.svg';
 import './App.scss';
+import RandomIcon from '../../components/RandomIcon/RandomIcon'
+import { times } from 'lodash'
 
 function App() {
   return (
     <div className="App">
-      <img src={logo} className="App-icon" alt="icon" />
-      <img src={logo} className="App-icon" alt="icon" />
-      <img src={logo} className="App-icon" alt="icon" />
-      <img src={logo} className="App-icon" alt="icon" />
+      {
+        times(20, i => <RandomIcon key={i}/>)
+      }
       <header className="App-header">
-
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

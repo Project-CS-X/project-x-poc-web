@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
 import './RandomIcon.scss'
-import { random, merge } from 'lodash'
+import { random } from 'lodash'
 
 function RandomIcon() {
 

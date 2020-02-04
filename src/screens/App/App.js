@@ -1,29 +1,30 @@
-import React from 'react';
-import './App.scss';
-import RandomIcon from '../../components/RandomIcon/RandomIcon'
+import React from 'react'
+import './App.scss'
+import { Link } from 'react-router-dom'
 import { times } from 'lodash'
+import RandomIcon from '../../components/RandomIcon/RandomIcon'
 
 function App() {
   return (
-    <div className="App">
-      {
-        times(20, i => <RandomIcon key={i}/>)
-      }
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        {
+          times(20, i => <RandomIcon key={i}/>)
+        }
+        
+        <div className="overlay"></div>
+
+        <div className="appPageNav">
+          <p>
+            Project X Web Version Test
+          </p>
+          <div className="menu-container">
+            <Link className="App-link" to="/test1">Test1</Link>
+            <Link className="App-link" to="/test2">Test2</Link>
+            <Link className="App-link" to="/test3">Test3</Link>
+          </div>
+        </div>
       </header>
-    </div>
-  );
+  )
 }
 
-export default App;
+export default App

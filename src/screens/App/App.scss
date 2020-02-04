@@ -1,26 +1,23 @@
 @import '../../assets/css/global.scss';
 
-.App {
-  width: 100vw;
-  height: 100vh;
-  background-color: $background-color-dark;
-  .App-header {
-    width: 100%;
-    position:absolute;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: $text-color-dark;
-    background-color:rgba($background-color-dark, 0.6);
-    p {
-      font-weight: 700;
-    }
-    
-    .App-link {
-      color: #61dafb;
-    }
+.appPageNav {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $text-color-dark;
+  p {
+    font-weight: 700;
   }
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($background-color-dark, 0.7);
+  position: absolute;
 }  

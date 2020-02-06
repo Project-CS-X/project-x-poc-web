@@ -15,11 +15,7 @@ function AppContainer() {
                 <Switch>
                     <Route exact path="/" component={App}/>
                     <div className="contentPages">
-                        {
-                            Routes.map( route => (
-                                <Route {...route}/>
-                            ))
-                        }
+                        { Routes.map( route => <Route {...route}/> ) }
                     </div>
                 </Switch>
             </div>

@@ -5,3 +5,9 @@ $text-color-light: #58677d;
 $text-color-dark: #fff;
 
 $secondary-background-dark: #101519;
+$secondary-background-light: #1b2c42;
+
+// Manually setting theme...
+$background-color-dark: $background-color-light;
+$secondary-background-dark: $secondary-background-light;
+$text-color-dark: $text-color-light;

@@ -1,5 +1,19 @@
+@import '../../assets/css/global.scss';
+
 .lessonPage {
-    display: inline-block;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .lessonContent {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        .lessonColumn {
+            padding: 10px;
+            border: 0.1px solid $secondary-background-dark;
+            flex: 1;
+        }
+    }
 }

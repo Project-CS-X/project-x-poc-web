@@ -1,13 +1,14 @@
 import React from 'react'
 import './NavigationMenu.scss'
-import { Link, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function NavigationMenu(props) {
-  return props.location.pathname !== '/' ? (
+  return (
     <div className="navMenu">
       <Link className="App-link" to="/">Home</Link>
+      <h2 className="sectionTitleHolder">{props.sectionName}</h2>
     </div>
-  ) : null
+  )
 }
 
-export default withRouter(NavigationMenu)
+export default NavigationMenu

@@ -1,8 +1,16 @@
 @import '../../assets/css/global.scss';
 
 .navMenu {
+    .sectionTitleHolder {
+        text-align: center;
+        flex: 1;
+        color: white;
+    }
+    .App-link {
+        position: absolute;
+    }
     width: 100vw;
-    height: 60px;
+    height: 50px;
     align-items: center;
     display: flex;
     flex-direction: row;

@@ -1,0 +1,60 @@
+{
+    "className": "Test Class",
+    "pages": [
+      {
+        "sectionName": "Section 1: Introduction to Classing",
+        "pageName": "What is a page?",
+        "columns": [
+          {
+            "span": 1,
+            "title": "Learn 1",
+            "elements": [
+
+            ]
+          },{
+            "span": 2,
+            "title": "Watch 1",
+            "elements": [
+
+            ]
+          }
+        ]
+      },{
+        "sectionName": "Section 1: Introduction to Classing",
+        "pageName": "Why is a page?",
+        "columns": [
+          {
+            "span": 1,
+            "title": "Learn 2",
+            "elements": [
+
+            ]
+          },{
+            "span": 1,
+            "title": "Practice 2",
+            "elements": [
+              
+            ]
+          },{
+            "span": 1,
+            "title": "Watch 2",
+            "elements": [
+              
+            ]
+          }
+        ]
+      },{
+        "sectionName": "Section 2: More Advanced Classing",
+        "pageName": "How is a page?",
+        "columns": [
+          {
+            "span": 3,
+            "title": "Learn 3",
+            "elements": [
+
+            ]
+          }
+        ]
+      }
+    ]
+}

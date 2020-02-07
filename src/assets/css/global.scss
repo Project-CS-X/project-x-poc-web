@@ -1,5 +1,17 @@
 @import './vars.scss';
 
+.App-link {
+    color: #61dafb;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 1s;
+    opacity: 0.8;
+    &:hover {
+        font-size: calc(10px + 3vmin);
+        opacity: 1;
+    }
+}
+
 @font-face {
     font-family: Moon;
     src: url('../fonts/Moon2.0-Regular.otf');

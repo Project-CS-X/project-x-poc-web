@@ -12,12 +12,12 @@ function AppContainer() {
         <Router>
             <div className="App">
                 <NavigationMenu />
-                <Switch>
-                    <Route exact path="/" component={App}/>
-                    <div className="contentPages">
-                        { Routes.map( route => <Route {...route}/> ) }
-                    </div>
-                </Switch>
+                <div className="appContainer">
+                    <Switch>
+                            <Route exact path="/" component={App}/>
+                            <> { Routes.map( (route, i) => <Route key={i} {...route}/> ) } </>
+                    </Switch>
+                </div>
             </div>
         </Router>
     )

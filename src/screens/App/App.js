@@ -18,9 +18,9 @@ function App() {
             Project X Web Version Test
           </p>
           <div className="menu-container">
-            <Link className="App-link" to="/test1">Test1</Link>
-            <Link className="App-link" to="/test2">Test2</Link>
-            <Link className="App-link" to="/test3">Test3</Link>
+            <Link className="App-link" to="/layout">Lesson Layout Test</Link>-
+            <Link className="App-link" to="/layout-markdown">Lesson Markdown Instructions Test</Link>-
+            <Link className="App-link" to="/layout-wizard">Lesson Wizard Test</Link> 
           </div>
         </div>
       </header>

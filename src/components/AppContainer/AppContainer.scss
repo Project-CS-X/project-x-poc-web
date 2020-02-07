@@ -3,10 +3,12 @@
 .App {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: $background-color-dark;
 
-    .contentPages {
-        padding: 20px;
+    .appContainer {
+        flex: 1;
     }
 }  
   

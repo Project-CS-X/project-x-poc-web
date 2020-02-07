@@ -1,6 +1,10 @@
 @import '../../assets/css/global.scss';
 
-.App-link {
-    color: #61dafb;
-    margin: 0 10px;
+.navMenu {
+    width: 100vw;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: $secondary-background-dark;
 }

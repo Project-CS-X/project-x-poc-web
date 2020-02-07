@@ -1,25 +1,16 @@
 import React from 'react'
-
-const Test1 = () => (
-    <p>Test 1</p>
-)
-const Test2 = () => (
-    <p>Test 2</p>
-)
-const Test3 = () => (
-    <p>Test 3</p>
-)
+import Lesson from '../screens/Lesson/Lesson'
 
 const routes = [
     {
-        path: '/test1',
-        component: Test1
+        path: '/layout',
+        component: Lesson
     }, {
-        path: '/test2',
-        component: Test2
+        path: '/layout-markdown',
+        component: Lesson
     }, {
-        path: '/test3',
-        component: Test3
+        path: '/layout-wizard',
+        component: Lesson
     }
 ]
 
